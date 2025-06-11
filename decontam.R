@@ -32,4 +32,11 @@ table(contamdf.prev$contaminant)
 ps_clean <- prune_taxa(!contamdf.prev$contaminant, ps)
 
 #Saving cleaned table
-write.table(otu_table(ps_clean), file="decontam-filtered-table.tsv", sep="\t", quote=FALSE)
+otu <- as(otu_table(ps_clean), "matrix")
+
+if (!taxa_are_rows(ps_clean)) {
+  otu <- t(otu)
+}
+
+write.table(otu, file = "decontam-filtered-table.tsv", sep = "\t",
+            quote = FALSE, col.names = NA)
