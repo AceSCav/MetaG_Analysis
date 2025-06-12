@@ -34,15 +34,17 @@ then
   echo "We will now check for contaminants."
   echo "Currently running decontam.R..." 
   Rscript decontam.R "$DATADIR"
+  table_path="$DATADIR/table-decontam.qza"
 else
   echo "Got it! Skipping contaminant filtering."
+  table_path="$DATADIR/table-filtered-final.qza"
 fi
 
 echo ""
 echo "Good, now we have our data ready for our final step. Yay!"
 echo "Lets go for the stats then."
 echo "Currently running Stats.sh..."
-./Stats.sh "$DATADIR"
+./Stats.sh "$DATADIR" "$table_path"
 
 echo ""
 echo "🎉 All main analysis steps are complete!"
