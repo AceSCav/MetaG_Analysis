@@ -1,0 +1,7 @@
+For the making of this pipeline and other scripts, we followed some guides that helped us:
+- https://www.slideshare.net/slideshow/tutorial-for-16s-rrna-gene-analysis-with-qiime2-pdf/269473474
+- https://john-quensen.com/tutorials/processing-16s-sequences-with-qiime2-and-dada2/
+- https://benjjneb.github.io/decontam/vignettes/decontam_intro.html
+- https://docs.qiime2.org/2024.10/tutorials/moving-pictures/
+
+
