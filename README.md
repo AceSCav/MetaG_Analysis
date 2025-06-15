@@ -34,7 +34,7 @@ It has three folders:
 ---
 
 ## About this pipeline
-This pipeline performs a complete 16S rRNA sequencing analysis — from raw FASTQ files all the way to microbial community profiles — using QIIME2 and a suite of powerful statistical tools.  
+This pipeline performs a complete 16S rRNA sequencing analysis - from raw FASTQ files all the way to microbial community profiles - using QIIME2 and a suite of powerful statistical tools.  
 It’s designed for reproducibility, ease of use, and education, making it perfect for students and researchers who want to learn more about microbial communities.
 It's made for easy adaptation to your own use; you can easily find ways to tweak it for your needs.
 
@@ -52,9 +52,9 @@ It's made for easy adaptation to your own use; you can easily find ways to tweak
 ## Installation
 
 ### Pre Requisites
-✅ Docker and QIIME2 image (alternatives exist, but we advise QIIME2) - for this we used Docker v.27.5.1 and QIIME2 CLI version 2024.10.1
-✅ R with the packages `phyloseq` and `decontam` (but the decontam.R on the pipeline installs it for you too) 
-✅ A manifest.tsv and metadata.tsv files adapted for QIIMME2 (a *.csv can be used too, but then you'd need to change it on the pipeline files)
+- ✅Docker and QIIME2 image (alternatives exist, but we advise QIIME2) - for this we used Docker v.27.5.1 and QIIME2 CLI version 2024.10.1
+- ✅R with the packages `phyloseq` and `decontam` (but the decontam.R on the pipeline installs it for you too) 
+- ✅A manifest.tsv and metadata.tsv files adapted for QIIMME2 (a *.csv can be used too, but then you'd need to change it on the pipeline files)
 
 ### Installation Steps
 
@@ -78,4 +78,4 @@ After running you'll be prompt with the informations of this pipeline along side
 ## File Organization
 All the files have self explanatory names, but in the end you should have something like this:
 ![image](https://github.com/user-attachments/assets/7f0ca69c-a718-4c97-a682-a2ba711c6ae8)
-####Expected directory structure after pipeline execution.
+#### Expected directory structure after pipeline execution.
