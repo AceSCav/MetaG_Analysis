@@ -78,4 +78,4 @@ After running you'll be prompt with the informations of this pipeline along side
 ## File Organization
 All the files have self explanatory names, but in the end you should have something like this:
 ![image](https://github.com/user-attachments/assets/7f0ca69c-a718-4c97-a682-a2ba711c6ae8)
-#### Expected directory structure after pipeline execution.
+Expected directory structure after pipeline execution.
