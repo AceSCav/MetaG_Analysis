@@ -27,9 +27,9 @@ A group of 4 students from ESTBarreiro with their school id number assigned.
 ## About this repository
 This repository was made to hold the data of a college project on the replication of 16S sequencing. We used the following article "The microbiome of a Pacific moon jellyfish Aurelia coerulea" (it can be found at: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298002) to use it as a base for our project.
 It has three folders:
--Pipeline (where you find the files to run the QIIME2 and R files)
--Results (where you can find our stats and multiqc report)
--other_scripts&guides (here you can find a guide on how to do your own SILVA classifier; python scripts that might help you adjusting your phylo trees; a little overview on where we went to look for tutorials)
+- Pipeline (where you find the files to run the QIIME2 and R files)
+- Results (where you can find our stats and multiqc report)
+- other_scripts&guides (here you can find a guide on how to do your own SILVA classifier; python scripts that might help you adjusting your phylo trees; a little overview on where we went to look for tutorials)
 
 ---
 
