@@ -1,0 +1,29 @@
+🔬 How to Build a SILVA Naive Bayes Classifier with QIIME2
+
+This mini-tutorial guides you through downloading SILVA files, optionally trimming them to your primer region, and training a Naive Bayes classifier — all set up for QIIME2.
+
+1. Download SILVA 138 files (pre-formatted for QIIME2) - or other version of SILVA you might want to use
+wget https://data.qiime2.org/2023.9/common/silva-138-99-seqs.qza -O silva-138-99-seqs.qza
+wget https://data.qiime2.org/2023.9/common/silva-138-99-tax.qza -O silva-138-99-tax.qza
+
+
+2. (Optional but recommended) Extract your primer region
+
+-If you want to match your classifier to your amplicon (like V3–V4), extract just those segments first.
+-Update --p-f-primer and --p-r-primer to match your primer sequences.
+
+qiime feature-classifier extract-reads \
+  --i-sequences silva-138-99-seqs.qza \
+  --p-f-primer CCTACGGGNGGCWGCAG \  # forward primer (341F, for example)
+  --p-r-primer GACTACHVGGGTATCTAATCC \  # reverse primer (805R, for example)
+  --p-trunc-len 0 \
+  --o-reads silva-138-99-extracted-reads.qza
+
+3. Train the classifier
+Now we build the Naive Bayes Classifier
+
+qiime feature-classifier fit-classifier-naive-bayes \
+  --i-reference-reads silva-138-99-extracted-reads.qza \
+  --i-reference-taxonomy silva-138-99-tax.qza \
+  --o-classifier silva-138-99-nb-classifier.qza
+
