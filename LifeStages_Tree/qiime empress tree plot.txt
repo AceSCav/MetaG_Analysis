@@ -1,6 +1,0 @@
-qiime empress tree-plot \
-  --i-tree rooted-tree.qza \
-  --i-feature-table table.qza \
-  --m-feature-metadata-file asv-stage-colors.tsv \
-  --o-visualization empress-tree.qzv
-
