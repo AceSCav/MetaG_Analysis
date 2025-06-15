@@ -1,9 +1,10 @@
+<h1 align="center">🔬 MetaG Analysis - 16S Sequencing Pipeline</h1>
 <p align="center">
-  <h3 align="center">🔬 MetaG Analysis - 16S Sequencing Pipeline </h3>
-A repository for data of a bioinformatics project on the 16S sequencing. It includes a pipeline using QIIME2 to process data and do statistical analysis. 
+A pipeline for QIIME2 16S rRNA microbial community analysis.
 </p>
 
 ---
+
 ## Authors 
 A group of 4 students from ESTBarreiro with their school id number assigned.
 - Aleff Cavalcante, 202300054
@@ -12,34 +13,46 @@ A group of 4 students from ESTBarreiro with their school id number assigned.
 - Ravi Silva, 202100191
 
 ---
+
 ## Index
-
+- [About this pipeline](#about-this-pipeline)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [File Organization](#file-organization)
 
 ---
-## Introduction
-In here you can find our results on the study of 16S sequencing, based on this original paper: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0298002.
-Besides it, you can find a pipelinemade to recreate some of the steps of this paper, using QIIME2.
+
+## About this pipeline
+This pipeline performs a complete 16S rRNA sequencing analysis — from raw FASTQ files all the way to microbial community profiles — using QIIME2 and a suite of powerful statistical tools.  
+It’s designed for reproducibility, ease of use, and education, making it perfect for students and researchers who want to learn more about microbial communities.
 
 ---
+
 ## Features
-
+- QIIME2 pipeline for 16S rRNA sequencing
+- Reproducible and flexible workflow
+- User-friendly instructions and prompts during execution
+- Allows you to skip steps if you wish
+- Educational — perfect for students and beginners in microbial ecology
 
 ---
+
 ## Installation
 
 ### Pre Requisites
-- Docker and QIIME2 image (there's more alternatives to it, but we advise this one)
-- R with the packages phyloseq and decontam
+✅ Docker and QIIME2 image (alternatives exist, but we advise QIIME2)  
+✅ R with the packages `phyloseq` and `decontam`
 
 ### Installation Steps
 
 1. Clone the repository:
-   ```sh
-   git clone https://github.com/AceSCav/MetaG_Analysis.git
-   cd MetaG_Analysis/Pipeline
-   ´´´
-
+```shell
+git clone https://github.com/AceSCav/MetaG_Analysis.git
+cd MetaG_Analysis/Pipeline
+```
 ---
+
 ## Usage
 ### Run the pipeline:
 ```sh
